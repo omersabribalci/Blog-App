@@ -6,10 +6,14 @@ import blogData from "../../data/blogData";
 const BlogContainer = () => {
   const [blogs, setBlogs] = useState(blogData);
   return (
-    <>
-      <BlogAddForm />
-      <BlogList blogs={blogs} />
-    </>
+    <div className="flex flex-col gap-10">
+      <BlogAddForm blogs={blogs} setBlogs={setBlogs} />
+      {blogs.length === 0 ? (
+        <p className="my-0 mx-auto">There is no blog post...</p>
+      ) : (
+        <BlogList blogs={blogs} setBlogs={setBlogs} />
+      )}
+    </div>
   );
 };
 
