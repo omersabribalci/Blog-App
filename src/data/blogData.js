@@ -71,6 +71,30 @@ const blogData = [
     date: "06.07.2018",
     author: "Ömer Sabri Balcı",
   },
+  {
+    id: 9,
+    title: "Lorem, ipsum dolor.",
+    content:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam saepe eligendi magnam ex aut voluptas ipsum harum optio vero nulla? Perferendis, eaque ipsum? Eos, reprehenderit maxime facere odio aliquam ullam ipsam sit dolor provident explicabo! Inventore harum, vero aut dolore corporis consequatur unde deserunt fugiat? Unde harum eius ducimus qui nobis reiciendis! Quaerat ab dignissimos illum architecto nesciunt sapiente maiores corrupti voluptatem saepe nostrum, quisquam recusandae asperiores tempore consequuntur ut natus tenetur doloremque, maxime molestiae voluptatibus provident.Ut nobis ea quo doloribus cumque nesciunt non perferendis hic saepe recusandae itaque labore laborum maiores sapiente nemo, beatae natus illo nam nisi corrupti voluptate consequatur velit id eligendi. Commodi modi sunt amet magnam quae quisquam, sed vel optio officiis iure exercitationem rem dolorem, cumque, cum quidem expedita ducimus inventore.",
+    date: "06.07.2018",
+    author: "Ömer Sabri Balcı",
+  },
+  {
+    id: 10,
+    title: "Lorem, ipsum dolor.",
+    content:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam saepe eligendi magnam ex aut voluptas ipsum harum optio vero nulla? Perferendis, eaque ipsum? Eos, reprehenderit maxime facere odio aliquam ullam ipsam sit dolor provident explicabo! Inventore harum, vero aut dolore corporis consequatur unde deserunt fugiat? Unde harum eius ducimus qui nobis reiciendis! Quaerat ab dignissimos illum architecto nesciunt sapiente maiores corrupti voluptatem saepe nostrum, quisquam recusandae asperiores tempore consequuntur ut natus tenetur doloremque, maxime molestiae voluptatibus provident.Ut nobis ea quo doloribus cumque nesciunt non perferendis hic saepe recusandae itaque labore laborum maiores sapiente nemo, beatae natus illo nam nisi corrupti voluptate consequatur velit id eligendi. Commodi modi sunt amet magnam quae quisquam, sed vel optio officiis iure exercitationem rem dolorem, cumque, cum quidem expedita ducimus inventore.",
+    date: "06.07.2018",
+    author: "Ömer Sabri Balcı",
+  },
+  {
+    id: 11,
+    title: "Lorem, ipsum dolor.",
+    content:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam saepe eligendi magnam ex aut voluptas ipsum harum optio vero nulla? Perferendis, eaque ipsum? Eos, reprehenderit maxime facere odio aliquam ullam ipsam sit dolor provident explicabo! Inventore harum, vero aut dolore corporis consequatur unde deserunt fugiat? Unde harum eius ducimus qui nobis reiciendis! Quaerat ab dignissimos illum architecto nesciunt sapiente maiores corrupti voluptatem saepe nostrum, quisquam recusandae asperiores tempore consequuntur ut natus tenetur doloremque, maxime molestiae voluptatibus provident.Ut nobis ea quo doloribus cumque nesciunt non perferendis hic saepe recusandae itaque labore laborum maiores sapiente nemo, beatae natus illo nam nisi corrupti voluptate consequatur velit id eligendi. Commodi modi sunt amet magnam quae quisquam, sed vel optio officiis iure exercitationem rem dolorem, cumque, cum quidem expedita ducimus inventore.",
+    date: "06.07.2018",
+    author: "Ömer Sabri Balcı",
+  },
 ];
 
 export default blogData;

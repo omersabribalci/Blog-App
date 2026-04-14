@@ -2,10 +2,10 @@ import React from "react";
 
 const BlogInput = ({ label, type, placeholder, name, handleChange, value }) => {
   return (
-    <label className="flex flex-col">
+    <label className="flex flex-col gap-2">
       {label}
       <input
-        className="border-2"
+        className="bg-white/30 rounded-xl p-2 focus:outline-none focus:ring-1 focus:ring-blue-400"
         type={type}
         placeholder={placeholder}
         name={name}
