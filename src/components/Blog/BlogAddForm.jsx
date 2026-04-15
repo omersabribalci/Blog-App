@@ -4,6 +4,7 @@ import BlogInput from "./BlogInput";
 import { nanoid } from "nanoid";
 import { blogInputs } from "../../data/blogInputs";
 import Modal from "../UI/Modal";
+import { format } from "date-fns";
 
 const initialFormData = {
   title: "",
@@ -15,6 +16,7 @@ const initialFormData = {
 const BlogAddForm = ({ blogs, setBlogs }) => {
   const [formData, setFormData] = useState(initialFormData);
   const [isShowModal, setIsShowModal] = useState(false);
+
   const handleChange = ({ target: { name, value } }) => {
     setFormData({ ...formData, [name]: value });
   };
@@ -25,7 +27,8 @@ const BlogAddForm = ({ blogs, setBlogs }) => {
       (data) => data.trim() !== "",
     );
     if (isFormValid) {
-      setBlogs([{ ...formData, id: nanoid() }, ...blogs]);
+      const formattedDate = format(new Date(formData.date), "dd.MM.yyyy");
+      setBlogs([{ ...formData, id: nanoid(), date: formattedDate }, ...blogs]);
       setFormData(initialFormData);
     } else {
       setIsShowModal(true);

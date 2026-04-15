@@ -2,7 +2,7 @@ import React from "react";
 
 const BlogDetails = ({ blogDetails, setIsReadMoreActive }) => {
   return (
-    <div className="max-w-3xl mx-auto my-20 p-8 bg-white/30 rounded-xl shadow-lg shadow-black/20 text-justify">
+    <div className="max-w-3xl mx-auto my-20 p-8 bg-white/30 rounded-xl shadow-lg shadow-black/20 text-justify ">
       <h1 className="text-3xl font-bold mb-4 text-center">
         {blogDetails.title}
       </h1>
@@ -15,7 +15,7 @@ const BlogDetails = ({ blogDetails, setIsReadMoreActive }) => {
       </div>
       <button
         onClick={() => setIsReadMoreActive(false)}
-        className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out"
+        className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out cursor-pointer"
       >
         Back
       </button>

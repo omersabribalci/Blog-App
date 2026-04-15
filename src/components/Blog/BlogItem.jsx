@@ -17,7 +17,7 @@ const BlogItem = ({
   };
 
   return (
-    <div className="flex flex-col gap-4 p-4 my-4 rounded-2xl shadow-2xl shadow-black/30 bg-white/30 w-80 hover:shadow-3xl hover:scale-105 transition duration-600 ease-in-out">
+    <div className="flex flex-col gap-4 p-4 my-4 rounded-2xl shadow-2xl shadow-black/30 bg-white/30 w-80 hover:shadow-3xl hover:scale-105 transition duration-600 ease-in-out h-full justify-between">
       <h1 className="text-xl font-bold text-gray-800 truncate">{title}</h1>
       <p className="line-clamp-4 text-justify text-gray-700 hover:text-gray-900 transition duration-300">
         {content}
