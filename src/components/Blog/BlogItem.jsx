@@ -1,6 +1,17 @@
 import React from "react";
 
-const BlogItem = ({ id, title, content, date, author, blogs, setBlogs }) => {
+const BlogItem = ({
+  id,
+  title,
+  content,
+  date,
+  author,
+  blogs,
+  blog,
+  setBlogs,
+  setIsReadMoreActive,
+  setBlogDetails,
+}) => {
   const handleClick = (id) => {
     setBlogs(blogs.filter((blog) => blog.id !== id));
   };
@@ -14,6 +25,10 @@ const BlogItem = ({ id, title, content, date, author, blogs, setBlogs }) => {
       <a
         href="#"
         className="text-green-600 font-medium hover:text-green-700 hover:underline transition duration-300"
+        onClick={() => {
+          setBlogDetails(blog);
+          setIsReadMoreActive(true);
+        }}
       >
         Read more...
       </a>
