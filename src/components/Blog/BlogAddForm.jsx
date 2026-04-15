@@ -3,6 +3,8 @@ import BlogInput from "./BlogInput";
 
 import { nanoid } from "nanoid";
 import { blogInputs } from "../../data/blogInputs";
+import Modal from "../UI/Modal";
+
 const initialFormData = {
   title: "",
   content: "",
@@ -12,21 +14,21 @@ const initialFormData = {
 
 const BlogAddForm = ({ blogs, setBlogs }) => {
   const [formData, setFormData] = useState(initialFormData);
-
+  const [isShowModal, setIsShowModal] = useState(false);
   const handleChange = ({ target: { name, value } }) => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const isFormValid = Object.values(formData).every(
-    (data) => data.trim() !== "",
-  );
-
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    const isFormValid = Object.values(formData).every(
+      (data) => data.trim() !== "",
+    );
     if (isFormValid) {
       setBlogs([{ ...formData, id: nanoid() }, ...blogs]);
       setFormData(initialFormData);
+    } else {
+      setIsShowModal(true);
     }
   };
 
@@ -72,6 +74,13 @@ const BlogAddForm = ({ blogs, setBlogs }) => {
           Add Blog
         </button>
       </form>
+      {isShowModal && (
+        <Modal
+          setIsShowModal={setIsShowModal}
+          title={"Input Error"}
+          message={"Please fill all inputs!"}
+        />
+      )}
     </div>
   );
 };
