@@ -11,7 +11,7 @@ import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 export default function Modal({ title, message, setIsShowModal }) {
   return createPortal(
     <Dialog
-      open={true} // her zaman açık, çünkü parent koşullu render ediyor
+      open={true}
       onClose={() => setIsShowModal(false)}
       className="relative z-10"
     >
